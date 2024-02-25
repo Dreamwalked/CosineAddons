@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "cosineaddons",
+	"version": "${version}",
+	"name": "Cosine Addons",
+	"description": "mod that does stuff i guess",
+	"authors": [
+		"Dreamwalked"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cosine-addons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dreamwalked.CosineAddons"
+		],
+		"fabric-datagen": [
+			"com.dreamwalked.CosineAddonsDataGenerator"
+		]
+	},
+	"mixins": [
+		"cosine-addons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
